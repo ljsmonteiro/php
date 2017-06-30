@@ -1,0 +1,202 @@
+echo
+
+vardump
+
+unset
+
+isset
+
+Concatenação (., ponto)
+Ex. $nomeCompleto = $nome . $ sobrenome;
+
+exit; Para a execução
+
+Tipos de Dados
+Básico:
+1) 
+	$nome = "Hcode";
+	$site = 'www.hcode.com.br';
+
+	$ano = 1990;
+	$salario = 5500.99
+	$bloqueado = false;
+
+Composto:
+1) 
+	$frutas = array("abacaxi", "laranja", "manga");
+	echo $frutas[2];
+
+	$dataNascimento = new DataTime();
+	vardump($dataNascimento);
+
+Especiais:
+1) resources
+$arquivo = fopen("exemplo-03.php","r");
+var_dump($arquivo);
+2) Null
+$nulo = NULL;
+
+Variáveis Pré-definidas ou SuperGlobais
+a) 
+$nome = (int)$_GET["a"];
+var_dump($nome);
+
+b) IP
+$ip = $_SERVER["REMOTE_ADDR"];
+echo $ip;
+
+c) Página Acessada
+$ip = $_SERVER["SCRIPT_NAME"];
+echo $ip;
+
+d) Escopo
+dentro da função pegar variável GLOBAL deve escrever GLOBAL.
+
+Strings
+
+a)
+'' mostra nome variavel
+"" mostra valor variavel
+
+b)
+strtoupper - maiusculas
+strtolower - minusculas
+ucwords - primeira letra de cada palavra maiusculas
+ucfirst - primeira letra da frase maiusculas
+
+c)
+str_replace("o","0",$empresa);
+strpos($frase, "mãe");
+substr($frase,0,$q)
+strlen
+
+Include
+
+Require
+Require_once
+
+if () {
+	
+} else if () {
+	
+} else {
+	
+}
+
+switch ($diadasemana){
+	case 0: echo "domingo";
+	break;
+	case 1: echo "Segunda";
+	break;
+	default: echo "Nenhum";
+	break;
+
+}
+
+for ($i=0;$i<10;i++){
+	
+}
+
+foreach
+
+while
+
+do while
+
+funções nativas
+
+date("w");
+
+Json
+
+jsonview - JSon Visor
+   Ctrl + u - normal
+
+
+Constante
+	Maiusculo
+	define("SERVIDOR", "127.0.0.1");
+
+
+POO
+
+Classe: Conjunto de atributos e métodos. As primeiras letras maiúsculas. Ex. DateTime
+
+Atributos: Armazenar - Variável que ganha mais recurso
+
+Métodos: Executar - Função que ganha mais recurso. Função dentro de uma classe.
+
+Instância - Cópia da Classe
+
+Encapsulamento: Variáveis dentro da classe
+
+Função: dentro da classe.
+
+$this-> Classe já instanciada. Referencia atributo e métodos dentro de outros métodos. Fora não precisa.
+
+Geters e Seters: Pegar e setar valores
+
+		public function getModelo(){
+			return $this->modelo;
+		}
+
+		public function setModelo($modelo){
+			$this->modelo = $modelo;
+		}
+
+Métodos Estáticos -> Não precisa instaciar para utilizar
+
+	$resultado = Documento::validarCPF($numero);
+
+Métodos Mágicos -> * (São 9)
+
+	*	public function __construct($a, $b, $c) {
+					$this->logradouro = $a;
+					$this->numero = $b;
+					$this->cidade = $c;
+				}
+
+	*			public function __destruct(){
+					// var_dump("Destruir");
+				}
+
+	*			public function __toString() {
+
+					return $this->logradouro.", ".$this->numero." - ".$this->cidade;
+
+				}
+			}
+
+			$meuEndereco = new Endereco("Rua Ademar Saraiva Leão", "123", "Santos");
+
+Encapsulamento -> Controlar quem pode ver e o que pode acessar.
+
+	public -> todos acessam (3)
+
+	protected -> os herdeiros acessam (2). Mesma classe e extendidas
+
+	private -> nem os herdeiros acessam, só quem está na mesma classe. (1)
+
+Herança -> extends
+
+Interface -> implements
+
+Classe Abstrata -> abstract
+
+Polimorfismo -> várias formas para um método.
+
+Autoload -> 
+
+	function __autoload($nomeClasse){
+		require_once("$nomeClasse.php");
+	}
+
+	spl_autoload_register()
+
+Namespace -> classes em diretorios para organização
+
+Mysql root 123456
+SQL sa sa
+
+
+
