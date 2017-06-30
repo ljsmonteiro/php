@@ -16,3 +16,11 @@ Criar repositorio
 7) git config --global user.name "Lucio Monteiro"
 8) git config --global user.email "lucio.suruagy@gmail.com"
 9) git push origin master
+
+levar da maquina remota para lucio
+10) git pull origin master
+
+Atualizando remoto
+11)git add --all
+12)git commit -m "mensagem"
+13)git push origin master

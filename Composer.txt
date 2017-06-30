@@ -1,0 +1,12 @@
+composer init
+	lucio/composer
+	descrição
+	autor
+	dev
+	project
+	no
+	no
+	yes
+	
+composer install
+composer update
