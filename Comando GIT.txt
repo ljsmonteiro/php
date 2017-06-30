@@ -1,5 +1,18 @@
-Comando GIT
+Comandos GIT
 
-1) git init
-2) git add --all
-3) git commit -m "Mensagem"
+Git bash here
+
+Copiar para local
+1) git clone url_repositorio
+
+Configurar git
+2) git init
+3) git add index.php
+4) git add --all
+5) git commit -m "Mensagem"
+
+Criar repositorio
+6) git remote add origin https://github.com/ljsmonteiro/php.git
+7) git config --global user.name "Lucio Monteiro"
+8) git config --global user.email "lucio.suruagy@gmail.com"
+9) git push origin master
